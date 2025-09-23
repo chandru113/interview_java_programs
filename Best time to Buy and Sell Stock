@@ -1,0 +1,17 @@
+class Solution {
+    public int maxProfit(int[] ar) {
+        int n=ar.length;
+        int min=Integer.MAX_VALUE;
+        int m=0;
+        for(int p:ar){
+            if(p<min){
+                min=p;
+            }
+            int profit=p-min;
+            if(profit>m){
+                m=profit;
+            }
+        }
+        return m;
+    }
+}
