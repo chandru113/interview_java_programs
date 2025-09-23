@@ -1,0 +1,11 @@
+class Solution {
+    public int[] sumZero(int n) {
+        int[] ar=new int[n];
+        int k=0;
+        for(int i=1;i<=n/2;i++){
+            ar[k++]=i;
+            ar[k++]=-i;
+        }
+        return ar;
+    }
+}
